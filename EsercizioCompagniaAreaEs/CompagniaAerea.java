@@ -5,7 +5,11 @@ import java.util.ArrayList;
 public class CompagniaAerea {
 
     private String nome;
+    
+    // Lista degli aerei appartenenti alla compagnia
     private ArrayList<Aereo> flotta;
+    
+    // Lista dei piloti che lavorano per la compagnia
     private ArrayList<Pilota> piloti;
 
     public CompagniaAerea(String nome) {
@@ -22,6 +26,7 @@ public class CompagniaAerea {
         piloti.add(pilota);
     }
 
+    // Per stampare tutte le informazioni della compagnia e i piloti
     public void stampaInformazioni() {
         System.out.println("Compagnia: " + nome);
         System.out.println("Flotta:");
