@@ -25,6 +25,7 @@ public class Aereo {
         return numeroPosti;
     }
 
+    // Viene accettato solo se il numero è maggiore di 0.
     public void setNumeroPosti(int numeroPosti) {
         if (numeroPosti > 0) {
             this.numeroPosti = numeroPosti;
