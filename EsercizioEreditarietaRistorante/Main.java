@@ -10,8 +10,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Ristorante ristorante = new Ristorante();
 
-        List<Chef> listaChef = new ArrayList<>();
-        List<Critico> listaCritici = new ArrayList<>();
+        List<Chef> listaChef = new ArrayList<>(); // Lista per memorizzare tutti gli chef creati
+        List<Critico> listaCritici = new ArrayList<>(); // Lista per memorizzare tutti i critici creati
 
         while (true) {
             System.out.println("menu");
@@ -23,7 +23,7 @@ public class Main {
             scanner.nextLine();
 
             if (scelta == 3)
-                break;
+                break; // Esce dal ciclo se l'utente sceglie 3
 
             System.out.print("Inserisci nome: ");
             String nome = scanner.nextLine();
@@ -33,7 +33,7 @@ public class Main {
             if (scelta == 1) {
                 Chef chef = new Chef(nome, email);
                 chef.stampaDati();
-                listaChef.add(chef);
+                listaChef.add(chef);  // Aggiunge lo chef alla lista
                 System.out.print("Inserisci piatto da aggiungere: ");
                 String piatto = scanner.nextLine();
                 chef.aggiungiPiatto(piatto, ristorante);
