@@ -18,11 +18,13 @@ public class Main {
         hotel.aggiungiCamera(suite1);
         hotel.aggiungiCamera(suite2);
 
-        System.out.println("=== Dettagli camere ===");
+       System.out.println("=== Dettagli camere ===");
         camera1.dettagli(); // normale
-        camera2.dettagli(false); // overload, senza prezzo
+        camera2.dettagli(true); // overload
+        //  camera2.dettagli(false); // overload, senza prezzo
         suite1.dettagli(); // override
         suite2.dettagli(true); // overload + override
+
 
         System.out.println("\nTotale suite presenti: " +
                 Hotel.contaSuite(hotel.getCamere()));
